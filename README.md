@@ -26,23 +26,19 @@ Sehaan Rahman — GitHub Profile
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&pause=1200&color=9BE9FF&center=true&vCenter=true&width=860&lines=Building+evaluation-first+AI+systems+that+ship.;RAG+%E2%86%92+retrieval+%2B+rules+%2B+guardrails+%2B+measurable+eval.;Computer+Vision+%E2%86%92+real-time+pipelines+%2B+tracking+%2B+deployment.;Data+Science+%E2%86%92+clean+EDA+%2B+forecasting+%2B+reproducible+dashboards." alt="Typing intro" />
 </a>
 
-<br/><br/>
-
-<img height="185" src="https://media.giphy.com/media/qgQUggCGvnkNC/giphy.gif" alt="Coding gif" />
-
 </div>
 
 ---
 
 ## About
-I’m a CS student at **VIT Bhopal** focused on building **applied AI systems** that are *reproducible, testable, and measurable*.
+I'm a CS student at **VIT Bhopal** focused on building **applied AI systems** that are *reproducible, testable, and measurable*.
 
 **What I optimize for**
 - **Evaluation-first ML** (clear baselines, metrics, ablations, error analysis)
 - **Reliability-minded engineering** (idempotency, recovery paths, clean interfaces)
 - **Practical deployment** (Docker, CI workflows, sensible defaults, clear runbooks)
 
-**Roles I’m targeting**
+**Roles I'm targeting**
 - **AI/ML Engineer (Applied AI, RAG, CV, MLOps-minded)**
 - **Data Scientist / Analyst (EDA, forecasting, experimentation, dashboards)**
 
@@ -50,31 +46,11 @@ I’m a CS student at **VIT Bhopal** focused on building **applied AI systems** 
 
 ## Featured Projects (with real engineering depth)
 
-<div align="center">
-
-<a href="https://github.com/Sehaan-1/Tender-Royal-Pulse">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Sehaan-1&repo=Tender-Royal-Pulse&theme=dracula&hide_border=false" />
-</a>
-<a href="https://github.com/Sehaan-1/crossborder-legal-rag">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Sehaan-1&repo=crossborder-legal-rag&theme=dracula&hide_border=false" />
-</a>
-
-<a href="https://github.com/Sehaan-1/sar---suspicious-activity-recognition">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Sehaan-1&repo=sar---suspicious-activity-recognition&theme=dracula&hide_border=false" />
-</a>
-<a href="https://github.com/Sehaan-1/xai-fraud-detection">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Sehaan-1&repo=xai-fraud-detection&theme=dracula&hide_border=false" />
-</a>
-
-</div>
-
----
-
 ### 1) Tender Royal Pulse — resilient public procurement crawler (Playwright + typed pipeline)
 Repo: **Tender-Royal-Pulse**
 
 **Problem**
-- Extract **50,000+** public tenders from India’s **eProcure/CPPP** portal, which is hostile to scraping (session-bound URLs, dynamic pages, rate limiting).
+- Extract **50,000+** public tenders from India's **eProcure/CPPP** portal, which is hostile to scraping (session-bound URLs, dynamic pages, rate limiting).
 
 **Technical highlights**
 - **Headless scraping** with Playwright (session persistence + re-auth on expiry)
@@ -96,7 +72,7 @@ Repo: **crossborder-legal-rag** (includes **System Card** + **Privacy Policy**)
   - **hybrid retrieval** (BM25 + dense embeddings)
   - **reranking**
   - **refusal guard** when retrieval quality is insufficient
-  - cited “memo-style” answers with traceable sources
+  - cited "memo-style" answers with traceable sources
 
 **System design details**
 - Hybrid retrieval blends **BM25 top-k** with **FAISS vector search**
@@ -209,9 +185,6 @@ Repo: **covid-vaccination-analysis**
 
 ## GitHub Stats
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Sehaan-1&show_icons=true&include_all_commits=true&count_private=true&theme=dracula&hide_border=false" height="165" alt="stats"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Sehaan-1&layout=compact&langs_count=7&theme=dracula&hide_border=false" height="165" alt="top langs"/>
-  <br/>
   <img src="https://streak-stats.demolab.com?user=Sehaan-1&theme=dark&hide_border=false&border_radius=8" height="190" alt="streak"/>
 </div>
 

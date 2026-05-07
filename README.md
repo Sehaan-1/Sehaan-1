@@ -1,9 +1,5 @@
-<!-- =========================
-Sehaan Rahman — GitHub Profile
-========================= -->
-
+<!-- ========================= Sehaan Rahman — GitHub Profile ========================= -->
 <div align="center">
-
 <img alt="Header" src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,55:203A43,100:2C5364&height=190&section=header&text=Sehaan%20Rahman&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Applied%20AI%20%7C%20ML%20Engineering%20%7C%20Data%20Science%20%7C%20Reliability-minded%20Systems&descAlignY=64&descSize=16" />
 
 <p>
@@ -19,7 +15,6 @@ Sehaan Rahman — GitHub Profile
 </p>
 
 <img src="https://visitor-badge.laobi.icu/badge?page_id=Sehaan-1.Sehaan-1" alt="visitors" />
-
 <br/><br/>
 
 <a href="https://github.com/Sehaan-1">
@@ -28,115 +23,80 @@ Sehaan Rahman — GitHub Profile
 
 </div>
 
----
+## 👨‍💻 About
 
-## About
-I'm a CS student at **VIT Bhopal** focused on building **applied AI systems** that are *reproducible, testable, and measurable*.
+CS student at VIT Bhopal building **applied AI systems** that are **reproducible, testable, and measurable**.
 
-**What I optimize for**
-- **Evaluation-first ML** (clear baselines, metrics, ablations, error analysis)
-- **Reliability-minded engineering** (idempotency, recovery paths, clean interfaces)
-- **Practical deployment** (Docker, CI workflows, sensible defaults, clear runbooks)
+**What I optimize for:**  
+✓ Evaluation-first ML (baselines, metrics, ablations)  
+✓ Reliability-minded engineering (idempotency, recovery, clean interfaces)  
+✓ Practical deployment (Docker, CI, sensible defaults)
 
-**Roles I'm targeting**
-- **AI/ML Engineer (Applied AI, RAG, CV, MLOps-minded)**
-- **Data Scientist / Analyst (EDA, forecasting, experimentation, dashboards)**
+**Roles I'm targeting:**  
+AI/ML Engineer • Data Scientist • MLOps-minded roles
 
 ---
 
-## Featured Projects (with real engineering depth)
+## 🚀 Featured Projects
 
-### 1) Tender Royal Pulse — resilient public procurement crawler (Playwright + typed pipeline)
-Repo: **Tender-Royal-Pulse**
+<table>
+<tr>
+<td width="50%" valign="top">
 
-**Problem**
-- Extract **50,000+** public tenders from India's **eProcure/CPPP** portal, which is hostile to scraping (session-bound URLs, dynamic pages, rate limiting).
+### 🏛️ [Tender Royal Pulse](https://github.com/Sehaan-1/Tender-Royal-Pulse)
+**Resilient public procurement crawler**
 
-**Technical highlights**
-- **Headless scraping** with Playwright (session persistence + re-auth on expiry)
-- **Reliability engine**: heartbeat + stale task recovery, graceful shutdown, and a **retry taxonomy**
-- **Idempotent upserts** with durable keys to prevent duplicates across runs
-- Strong SWE discipline: **Pydantic models**, strict typing, lint gates, tests, and a structured repo layout
+Extracts 50,000+ tenders from India's eProcure portal using Playwright with session persistence, heartbeat monitoring, and idempotent upserts.
 
-**Outputs**
-- Export to **CSV** (analyst-friendly) and **JSONL** (pipeline-friendly)
+**Tech:** Python • Playwright • Pydantic  
+**Highlights:** Retry taxonomy, graceful shutdown, strict typing
 
----
+</td>
+<td width="50%" valign="top">
 
-### 2) Cross-Border Legal RAG — hybrid retrieval + rule layer + measurable evaluation
-Repo: **crossborder-legal-rag** (includes **System Card** + **Privacy Policy**)
+### ⚖️ [Cross-Border Legal RAG](https://github.com/Sehaan-1/crossborder-legal-rag)
+**Hybrid retrieval + rule layer + evaluation**
 
-**What it does**
-- Answers cross-border legal scenario questions using EU regulations as the knowledge base:
-  - deterministic **rule layer**
-  - **hybrid retrieval** (BM25 + dense embeddings)
-  - **reranking**
-  - **refusal guard** when retrieval quality is insufficient
-  - cited "memo-style" answers with traceable sources
+Answers legal questions using EU regulations via BM25 + FAISS hybrid retrieval, reranking, and refusal guards.
 
-**System design details**
-- Hybrid retrieval blends **BM25 top-k** with **FAISS vector search**
-- Adds deduplication + (optional) **cross-encoder reranking**
-- Provides a reproducible **evaluation harness** and a published report
+**Tech:** Python • FAISS • BM25  
+**Metrics:** 78% article recall, 85% refusal accuracy, ~9s p95 latency
 
-**Reported evaluation (v1.0.0)**
-- Article Recall (overall): **~78%**
-- Refusal Accuracy: **~85%**
-- p95 latency (Space, warm): **~9s**
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
----
+### 🎥 [SAR — Suspicious Activity Recognition](https://github.com/Sehaan-1/sar---suspicious-activity-recognition)
+**Real-time CV surveillance platform**
 
-### 3) SAR — Suspicious Activity Recognition System (real-time CV, multi-service, Docker Compose)
-Repo: **sar---suspicious-activity-recognition**
+Multi-camera security system with React dashboard, Node.js backend, and Python AI worker (YOLOv8 + ByteTrack).
 
-**What it is**
-- A real-time security surveillance platform with:
-  - React dashboard (live feeds, events, analytics)
-  - Node/Express backend (API + Socket.IO)
-  - Python AI worker (OpenCV + YOLOv8 + ByteTrack)
+**Tech:** React • Node.js • OpenCV • Docker Compose  
+**Highlights:** WebSocket alerts, dynamic threading, one-command deploy
 
-**Engineering challenges solved**
-- Multi-camera concurrency (dynamic thread orchestration)
-- Web streaming input support via **yt-dlp**
-- Real-time alerts pushed via **WebSockets**
-- Data retention + cleanup to prevent silent disk exhaustion
-- One-command deployment with **Docker Compose**
+</td>
+<td width="50%" valign="top">
+
+### 🛡️ [XAI Fraud Detection](https://github.com/Sehaan-1/xai-fraud-detection)
+**FastAPI model serving + SHAP explainability**
+
+Fraud detection with XGBoost + SMOTE, serving via FastAPI with per-prediction SHAP attributions and Prometheus-style monitoring.
+
+**Tech:** Python • XGBoost • SHAP • FastAPI • Docker  
+**Highlights:** CI/CD pipeline, /metrics endpoint, cloud-ready
+
+</td>
+</tr>
+</table>
 
 ---
 
-### 4) Real-Time XAI Fraud Detection — FastAPI model serving + SHAP explainability + MLOps framing
-Repo: **xai-fraud-detection**
+## 🛠️ Stack
 
-**Problem**
-- Fraud detection is heavily imbalanced; accuracy can be misleading.
-- The model must be **explainable** (regulatory + analyst usability).
-
-**Technical highlights**
-- **XGBoost + SMOTE** for class imbalance
-- **SHAP TreeExplainer** for per-prediction feature attributions
-- **FastAPI** serving layer with Pydantic validation
-- **/metrics** endpoint (Prometheus-style monitoring)
-- CI/CD pipeline and containerized deployment workflow (Docker + cloud-oriented structure)
-
----
-
-<details>
-  <summary><b>Additional DS project: COVID-19 Global Vaccination Analysis & SARIMA Forecasting</b></summary>
-
-Repo: **covid-vaccination-analysis**
-
-- Streamlit dashboard for EDA + rankings + comparisons
-- SARIMA forecasting: `SARIMA(2,1,2)×(1,1,1,7)` with confidence intervals
-- Test coverage for data quality (date parsing, non-negative values, rolling averages, forecast clipping)
-</details>
-
----
-
-## Stack (grouped by how I use it)
 <div align="left">
 
-**Core**
-<br/>
+**Core**  
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="34" alt="Python" title="Python" />
 <img width="10"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="34" alt="TypeScript" title="TypeScript" />
@@ -149,16 +109,14 @@ Repo: **covid-vaccination-analysis**
 
 <br/><br/>
 
-**AI / CV / Data**
-<br/>
+**AI / CV / Data**  
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" height="34" alt="OpenCV" title="OpenCV" />
 <img width="10"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" height="34" alt="SQLite" title="SQLite" />
 
 <br/><br/>
 
-**Web**
-<br/>
+**Web**  
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="34" alt="React" title="React" />
 <img width="10"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="34" alt="Node.js" title="Node.js" />
@@ -169,8 +127,7 @@ Repo: **covid-vaccination-analysis**
 
 <br/><br/>
 
-**DevOps / Cloud**
-<br/>
+**DevOps / Cloud**  
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="34" alt="Docker" title="Docker" />
 <img width="10"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="34" alt="Git" title="Git" />
@@ -183,7 +140,8 @@ Repo: **covid-vaccination-analysis**
 
 ---
 
-## GitHub Stats
+## 📊 GitHub Stats
+
 <div align="center">
   <img src="https://streak-stats.demolab.com?user=Sehaan-1&theme=dark&hide_border=false&border_radius=8" height="190" alt="streak"/>
 </div>

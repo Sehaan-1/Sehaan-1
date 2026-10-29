@@ -1,153 +1,85 @@
-<!-- ========================= Sehaan Rahman — GitHub Profile ========================= -->
 <div align="center">
-<img alt="Header" src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,55:203A43,100:2C5364&height=190&section=header&text=Sehaan%20Rahman&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Applied%20AI%20%7C%20ML%20Engineering%20%7C%20Data%20Science%20%7C%20Reliability-minded%20Systems&descAlignY=64&descSize=16" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/banner-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="assets/banner-light.png">
+    <img src="assets/banner-dark.png" width="100%" alt="Sehaan Ur Rahman — Applied AI, machine learning systems, data engineering">
+  </picture>
+</div>
 
-<p>
-  <a href="https://www.linkedin.com/in/sehaan-rahman-967648296/" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white&style=for-the-badge" height="28" alt="LinkedIn" />
-  </a>
-  <a href="mailto:sehaanincollege@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white&style=for-the-badge" height="28" alt="Email" />
-  </a>
-  <a href="https://github.com/Sehaan-1" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge" height="28" alt="GitHub" />
-  </a>
+<p align="center">
+  <a href="https://www.linkedin.com/in/sehaan-rahman-967648296/">LinkedIn</a>
+  &nbsp;·&nbsp;
+  <a href="mailto:sehaanincollege@gmail.com">Email</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/Sehaan-1?tab=repositories">Repositories</a>
 </p>
 
-<img src="https://visitor-badge.laobi.icu/badge?page_id=Sehaan-1.Sehaan-1" alt="visitors" />
-<br/><br/>
+<br>
 
-<a href="https://github.com/Sehaan-1">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&pause=1200&color=9BE9FF&center=true&vCenter=true&width=860&lines=Building+evaluation-first+AI+systems+that+ship.;RAG+%E2%86%92+retrieval+%2B+rules+%2B+guardrails+%2B+measurable+eval.;Computer+Vision+%E2%86%92+real-time+pipelines+%2B+tracking+%2B+deployment.;Data+Science+%E2%86%92+clean+EDA+%2B+forecasting+%2B+reproducible+dashboards." alt="Typing intro" />
-</a>
+## What I do
 
-</div>
+I build AI and data systems, and I spend most of my time on the part that starts after the demo works: whether the retrieval actually retrieves, whether the pipeline survives a malformed record at 3 a.m., whether the policy still holds under a retry storm. The work is mostly Python — services with typed contracts, evaluation harnesses, deterministic pipelines — with enough Go, Rust, C++, C# and TypeScript to understand where the real constraints live.
 
-## 👨‍💻 About
+Computer science undergraduate at **VIT Bhopal**, building in the open.
 
-CS student at VIT Bhopal building **applied AI systems** that are **reproducible, testable, and measurable**.
+<br>
 
-**What I optimize for:**  
-✓ Evaluation-first ML (baselines, metrics, ablations)  
-✓ Reliability-minded engineering (idempotency, recovery, clean interfaces)  
-✓ Practical deployment (Docker, CI, sensible defaults)
+## How I work
 
-**Roles I'm targeting:**  
-AI/ML Engineer • Data Scientist • MLOps-minded roles
+**Measure before claiming.**  
+Baselines, metrics and ablations ship with the model, not after it. Retrieval recall and refusal accuracy, inter-annotator agreement coefficients, p50/p95 latency — a number with a denominator, or it doesn't go in the README.
 
----
+**Design for the failure case.**  
+Idempotent writes, quarantine paths for bad rows, bounded queues, graceful shutdown, chaos and crash-recovery tests, and an explicit taxonomy of what can go wrong instead of a silent retry.
 
-## 🚀 Featured Projects
+**Keep the seams honest.**  
+Typed contracts at every boundary, read paths that cannot take down write paths, one-command deploys, and migrations that run themselves on first boot.
 
-<table>
-<tr>
-<td width="50%" valign="top">
+**Leave the reasoning visible.**  
+Architecture decision records, datasheets, annotation guidelines and dashboards that state their own sample sizes and caveats.
 
-### 🏛️ [Tender Royal Pulse](https://github.com/Sehaan-1/Tender-Royal-Pulse)
-**Resilient public procurement crawler**
+<br>
 
-Extracts 50,000+ tenders from India's eProcure portal using Playwright with session persistence, heartbeat monitoring, and idempotent upserts.
+## Stack
 
-**Tech:** Python • Playwright • Pydantic  
-**Highlights:** Retry taxonomy, graceful shutdown, strict typing
+**Languages**  
+Python · TypeScript · SQL · Go · Rust · C++20 · C# · Java · Kotlin · R · JavaScript · Dart
 
-</td>
-<td width="50%" valign="top">
+**Machine learning**  
+PyTorch · scikit-learn · XGBoost · SHAP · Hugging Face Transformers · FAISS · BM25 hybrid retrieval · YOLOv8 · ByteTrack · CLIP · OpenCV · Thompson sampling and drift detection (ADWIN) · off-policy evaluation
 
-### ⚖️ [Cross-Border Legal RAG](https://github.com/Sehaan-1/crossborder-legal-rag)
-**Hybrid retrieval + rule layer + evaluation**
+**Data & evaluation**  
+pandas · NumPy · DuckDB · dbt · Airflow · medallion architecture · inter-annotator agreement (Cohen, Fleiss, Krippendorff) · annotation QA workflows · data-quality scorecards · datasheets and ADRs · pytest, property-based testing, CI gates
 
-Answers legal questions using EU regulations via BM25 + FAISS hybrid retrieval, reranking, and refusal guards.
+**Web & product**  
+FastAPI · Pydantic v2 · SQLAlchemy 2.0 · Node.js · Express · Spring Boot · React 19 · Next.js · Vite · Tailwind CSS · Three.js · Leaflet · D3 · TanStack Query · WebSockets · Jetpack Compose · Flutter · PostgreSQL · SQLite (WAL) · Redis · MySQL · Drizzle ORM · Flyway
 
-**Tech:** Python • FAISS • BM25  
-**Metrics:** 78% article recall, 85% refusal accuracy, ~9s p95 latency
+**Infrastructure & observability**  
+Docker and Compose · GitHub Actions · Prometheus · Grafana · nginx · Caddy · Cloudflare · Vercel · AWS (S3, Lambda) · GCP · healthchecks and staged rollouts
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+**Systems programming**  
+Lock-free ring buffers and atomics · memory arenas · FastCDC chunking · TLS 1.3 framing · Lua scripting inside Redis · BLE/GATT and ESP32 firmware · dependency-free parsing, encoding and rendering in Rust
 
-### 🎥 [SAR — Suspicious Activity Recognition](https://github.com/Sehaan-1/sar---suspicious-activity-recognition)
-**Real-time CV surveillance platform**
+<br>
 
-Multi-camera security system with React dashboard, Node.js backend, and Python AI worker (YOLOv8 + ByteTrack).
+## Domains
 
-**Tech:** React • Node.js • OpenCV • Docker Compose  
-**Highlights:** WebSocket alerts, dynamic threading, one-command deploy
+**Applied AI** — retrieval-augmented systems with hybrid search and refusal guards; explainability served per prediction; classification over messy real-world text.
 
-</td>
-<td width="50%" valign="top">
+**Evaluation & data quality** — agreement statistics implemented from scratch, annotation protocols, pilot reports, and pipelines that refuse to report a metric without its sample size.
 
-### 🛡️ [XAI Fraud Detection](https://github.com/Sehaan-1/xai-fraud-detection)
-**FastAPI model serving + SHAP explainability**
+**Data engineering** — ingestion with quarantine, deterministic transforms, warehouse modelling, cohort and LTV analysis.
 
-Fraud detection with XGBoost + SMOTE, serving via FastAPI with per-prediction SHAP attributions and Prometheus-style monitoring.
+**Systems & reliability** — incident response automation, rate limiting at the edge, crash-safe synchronisation, and low-latency C++ where the microseconds are the point.
 
-**Tech:** Python • XGBoost • SHAP • FastAPI • Docker  
-**Highlights:** CI/CD pipeline, /metrics endpoint, cloud-ready
+<br>
 
-</td>
-</tr>
-</table>
+## Selected work
 
----
+The pinned repositories below are the best entry points. Every number quoted in a project's README is reproducible from the repo itself — measured, not estimated.
 
-## 🛠️ Stack
+<br>
 
-<div align="left">
-
-**Core**  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="34" alt="Python" title="Python" />
-<img width="10"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="34" alt="TypeScript" title="TypeScript" />
-<img width="10"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="34" alt="JavaScript" title="JavaScript" />
-<img width="10"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="34" alt="Java" title="Java" />
-<img width="10"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" height="34" alt="R" title="R" />
-
-<br/><br/>
-
-**AI / CV / Data**  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" height="34" alt="OpenCV" title="OpenCV" />
-<img width="10"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" height="34" alt="SQLite" title="SQLite" />
-
-<br/><br/>
-
-**Web**  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="34" alt="React" title="React" />
-<img width="10"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="34" alt="Node.js" title="Node.js" />
-<img width="10"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="34" alt="HTML5" title="HTML5" />
-<img width="10"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="34" alt="CSS3" title="CSS3" />
-
-<br/><br/>
-
-**DevOps / Cloud**  
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" height="34" alt="Docker" title="Docker" />
-<img width="10"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" height="34" alt="Git" title="Git" />
-<img width="10"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" height="34" alt="AWS" title="AWS" />
-<img width="10"/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" height="34" alt="GCP" title="GCP" />
-
-</div>
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-  <img src="https://streak-stats.demolab.com?user=Sehaan-1&theme=dark&hide_border=false&border_radius=8" height="190" alt="streak"/>
-</div>
-
----
-
-<div align="center">
-  <img alt="Footer" src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,55:203A43,100:2C5364&height=120&section=footer" />
-</div>
+<p align="center">
+  <sub>Open to conversations about applied AI, data systems and reliability work — <a href="mailto:sehaanincollege@gmail.com">email is the fastest route</a>.</sub>
+</p>

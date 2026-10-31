@@ -14,72 +14,69 @@
   <a href="https://github.com/Sehaan-1?tab=repositories">Repositories</a>
 </p>
 
-<br>
+---
 
-## What I do
+Most of my work happens after the demo. The notebook that scores 0.94 still has to answer the same question twice without changing its mind, survive a CSV with a date from 1901 in it, and explain why it refused. That gap — between "it works on my machine" and "it works on a Tuesday" — is the part I find genuinely fun.
 
-I build AI and data systems, and I spend most of my time on the part that starts after the demo works: whether the retrieval actually retrieves, whether the pipeline survives a malformed record at 3 a.m., whether the policy still holds under a retry storm. The work is mostly Python — services with typed contracts, evaluation harnesses, deterministic pipelines — with enough Go, Rust, C++, C# and TypeScript to understand where the real constraints live.
+So I build the whole thing: the crawler, the model, the evaluation, the dashboard, the thing that notices when the pipeline silently stopped at 3 a.m. Mostly Python. Enough Go, Rust, C++ and C# to know where the real constraints live.
 
-Computer science undergraduate at **VIT Bhopal**, building in the open.
+CS undergraduate at **VIT Bhopal**. Forty-odd public repos, most of them built to answer a question I couldn't put down.
 
-<br>
+---
 
-## How I work
+## What I actually care about
 
-**Measure before claiming.**  
-Baselines, metrics and ablations ship with the model, not after it. Retrieval recall and refusal accuracy, inter-annotator agreement coefficients, p50/p95 latency — a number with a denominator, or it doesn't go in the README.
+**A metric without a denominator is a vibe.**  
+Every project ships its own evaluation: retrieval recall, refusal accuracy, inter-annotator agreement, p50/p95 latency. If a number can't be reproduced from the repo, it doesn't go in the README.
 
-**Design for the failure case.**  
-Idempotent writes, quarantine paths for bad rows, bounded queues, graceful shutdown, chaos and crash-recovery tests, and an explicit taxonomy of what can go wrong instead of a silent retry.
+**The happy path is a demo. The other paths are the product.**  
+Idempotent writes, quarantine rows instead of crashed batches, bounded queues, graceful shutdown, and a test that deliberately kills the process mid-write.
 
-**Keep the seams honest.**  
-Typed contracts at every boundary, read paths that cannot take down write paths, one-command deploys, and migrations that run themselves on first boot.
+**Write the reasoning down, or you'll relitigate it in six months.**  
+ADRs, datasheets, annotation guidelines — mostly notes to future me, who will have forgotten everything and will be very confident anyway.
 
-**Leave the reasoning visible.**  
-Architecture decision records, datasheets, annotation guidelines and dashboards that state their own sample sizes and caveats.
+**Boring where it counts, clever where it pays.**  
+A deterministic pipeline that always does the same thing beats a fast one that sometimes doesn't.
 
-<br>
+---
 
-## Stack
+## Toolbox
 
 **Languages**  
 Python · TypeScript · SQL · Go · Rust · C++20 · C# · Java · Kotlin · R · JavaScript · Dart
 
 **Machine learning**  
-PyTorch · scikit-learn · XGBoost · SHAP · Hugging Face Transformers · FAISS · BM25 hybrid retrieval · YOLOv8 · ByteTrack · CLIP · OpenCV · Thompson sampling and drift detection (ADWIN) · off-policy evaluation
+PyTorch · scikit-learn · XGBoost · SHAP · Hugging Face Transformers · FAISS · BM25 hybrid retrieval · YOLOv8 · ByteTrack · CLIP · OpenCV · Thompson sampling with drift detection · off-policy evaluation
 
 **Data & evaluation**  
-pandas · NumPy · DuckDB · dbt · Airflow · medallion architecture · inter-annotator agreement (Cohen, Fleiss, Krippendorff) · annotation QA workflows · data-quality scorecards · datasheets and ADRs · pytest, property-based testing, CI gates
+pandas · NumPy · DuckDB · dbt · Airflow · medallion architecture · Cohen / Fleiss / Krippendorff agreement (written from scratch) · annotation QA · data-quality scorecards · pytest, property-based tests, CI gates
 
 **Web & product**  
 FastAPI · Pydantic v2 · SQLAlchemy 2.0 · Node.js · Express · Spring Boot · React 19 · Next.js · Vite · Tailwind CSS · Three.js · Leaflet · D3 · TanStack Query · WebSockets · Jetpack Compose · Flutter · PostgreSQL · SQLite (WAL) · Redis · MySQL · Drizzle ORM · Flyway
 
 **Infrastructure & observability**  
-Docker and Compose · GitHub Actions · Prometheus · Grafana · nginx · Caddy · Cloudflare · Vercel · AWS (S3, Lambda) · GCP · healthchecks and staged rollouts
+Docker & Compose · GitHub Actions · Prometheus · Grafana · nginx · Caddy · Cloudflare · Vercel · AWS (S3, Lambda) · GCP · healthchecks and staged rollouts
 
 **Systems programming**  
-Lock-free ring buffers and atomics · memory arenas · FastCDC chunking · TLS 1.3 framing · Lua scripting inside Redis · BLE/GATT and ESP32 firmware · dependency-free parsing, encoding and rendering in Rust
+Lock-free ring buffers and atomics · memory arenas · FastCDC chunking · TLS 1.3 framing · Lua inside Redis · BLE/GATT and ESP32 firmware · dependency-free parsers, encoders and renderers in Rust
 
-<br>
+---
 
-## Domains
+## Ask me about
 
-**Applied AI** — retrieval-augmented systems with hybrid search and refusal guards; explainability served per prediction; classification over messy real-world text.
+- Why a hybrid retriever beats a good embedding model on legal text
+- Writing Krippendorff's alpha from scratch, and why the easy version is wrong
+- What a lock-free SPSC ring buffer actually buys you at 400k orders/sec
+- Recovering a broken pipeline at 3 a.m. without waking anyone up
+- Rendering a ray-traced image in Rust with zero dependencies, on purpose
+- Why I think every AI project should ship its own failure taxonomy
 
-**Evaluation & data quality** — agreement statistics implemented from scratch, annotation protocols, pilot reports, and pipelines that refuse to report a metric without its sample size.
-
-**Data engineering** — ingestion with quarantine, deterministic transforms, warehouse modelling, cohort and LTV analysis.
-
-**Systems & reliability** — incident response automation, rate limiting at the edge, crash-safe synchronisation, and low-latency C++ where the microseconds are the point.
-
-<br>
+---
 
 ## Selected work
 
-The pinned repositories below are the best entry points. Every number quoted in a project's README is reproducible from the repo itself — measured, not estimated.
-
-<br>
+The pinned repositories below are the best entry points — one per discipline, each with its numbers, tests and trade-offs written down. Start anywhere; they all explain themselves.
 
 <p align="center">
-  <sub>Open to conversations about applied AI, data systems and reliability work — <a href="mailto:sehaanincollege@gmail.com">email is the fastest route</a>.</sub>
+  <sub>If you got this far, we should probably talk. <a href="mailto:sehaanincollege@gmail.com">sehaanincollege@gmail.com</a></sub>
 </p>

@@ -24,6 +24,20 @@ CS undergraduate at **VIT Bhopal**. Forty-odd public repos, most of them built t
 
 ---
 
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset="assets/stack-light.png">
+    <img src="assets/stack-dark.png" width="100%" alt="Tech stack by layer: interfaces, services, intelligence, data and platform, with languages measured by source volume">
+  </picture>
+</div>
+
+Read it bottom-up: data and platform underneath, intelligence in the middle, interfaces on top. The language bar is measured from my own repositories, not self-reported — Python is the instrument, but the C# and C++ are there because a sync engine and an order matcher are not problems Python should be asked to solve.
+
+<!-- Regenerate the diagram after a push: python3 tools/generate_stack.py -->
+
+---
+
 ## What I actually care about
 
 **A metric without a denominator is a vibe.**  
@@ -37,28 +51,6 @@ ADRs, datasheets, annotation guidelines — mostly notes to future me, who will 
 
 **Boring where it counts, clever where it pays.**  
 A deterministic pipeline that always does the same thing beats a fast one that sometimes doesn't.
-
----
-
-## Toolbox
-
-**Languages**  
-Python · TypeScript · SQL · Go · Rust · C++20 · C# · Java · Kotlin · R · JavaScript · Dart
-
-**Machine learning**  
-PyTorch · scikit-learn · XGBoost · SHAP · Hugging Face Transformers · FAISS · BM25 hybrid retrieval · YOLOv8 · ByteTrack · CLIP · OpenCV · Thompson sampling with drift detection · off-policy evaluation
-
-**Data & evaluation**  
-pandas · NumPy · DuckDB · dbt · Airflow · medallion architecture · Cohen / Fleiss / Krippendorff agreement (written from scratch) · annotation QA · data-quality scorecards · pytest, property-based tests, CI gates
-
-**Web & product**  
-FastAPI · Pydantic v2 · SQLAlchemy 2.0 · Node.js · Express · Spring Boot · React 19 · Next.js · Vite · Tailwind CSS · Three.js · Leaflet · D3 · TanStack Query · WebSockets · Jetpack Compose · Flutter · PostgreSQL · SQLite (WAL) · Redis · MySQL · Drizzle ORM · Flyway
-
-**Infrastructure & observability**  
-Docker & Compose · GitHub Actions · Prometheus · Grafana · nginx · Caddy · Cloudflare · Vercel · AWS (S3, Lambda) · GCP · healthchecks and staged rollouts
-
-**Systems programming**  
-Lock-free ring buffers and atomics · memory arenas · FastCDC chunking · TLS 1.3 framing · Lua inside Redis · BLE/GATT and ESP32 firmware · dependency-free parsers, encoders and renderers in Rust
 
 ---
 

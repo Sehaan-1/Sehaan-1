@@ -38,6 +38,24 @@ Read it bottom-up: data and platform underneath, intelligence in the middle, int
 
 ---
 
+## Engineering, briefly
+
+The same instincts, in the languages where they cost something:
+
+**Concurrency** — lock-free SPSC ring buffers at **4.9 ns/op**; deterministic pre-trade risk checks at **6.5M orders/sec**; bounded async channels that cap memory under load instead of growing until they don't.
+
+**Wire protocols** — length-prefixed TCP framing with oversized-payload rejection before allocation, TLS 1.3 via `SslStream`, and BGP-4 collision tie-breaking for simultaneous peer dials.
+
+**Distributed state** — FastCDC chunking over a Merkle prefix index, vector-clock conflict resolution, and crash-recovery tests that kill the process mid-write.
+
+**Storage & schema** — PostgreSQL and SQLite (WAL), versioned migrations that run themselves on first boot, and a compile-time-typed ORM layer.
+
+**Edge & distribution** — atomic token-bucket rate limiting in Redis Lua across three replicas; content-addressed build caching with a Merkle-hashed DAG in Go; GoReleaser binaries.
+
+**Correctness** — property-based tests, chaos and restart suites, strict typing, and CI gates that fail the build rather than the users.
+
+---
+
 ## What I actually care about
 
 **A metric without a denominator is a vibe.**  
@@ -58,7 +76,7 @@ A deterministic pipeline that always does the same thing beats a fast one that s
 
 - Why a hybrid retriever beats a good embedding model on legal text
 - Writing Krippendorff's alpha from scratch, and why the easy version is wrong
-- What a lock-free SPSC ring buffer actually buys you at 400k orders/sec
+- What a lock-free SPSC ring buffer actually buys you at 6.5M orders/sec
 - Recovering a broken pipeline at 3 a.m. without waking anyone up
 - Rendering a ray-traced image in Rust with zero dependencies, on purpose
 - Why I think every AI project should ship its own failure taxonomy

@@ -28,25 +28,25 @@ LABEL_W = 168
 CHIP_X0 = MARGIN + LABEL_W
 
 LAYERS = [
-    ("01", "Interfaces", "#22D3EE", [
+    ("01", "Interfaces", "#22D3EE", "what people touch", [
         "React 19", "Next.js", "Vite", "Tailwind CSS", "Three.js",
         "Leaflet", "D3", "TanStack Query", "Jetpack Compose", "Flutter", "WebSockets",
     ]),
-    ("02", "Services", "#60A5FA", [
+    ("02", "Services", "#60A5FA", "typed contracts", [
         "FastAPI", "Pydantic v2", "SQLAlchemy 2.0", "Uvicorn", "Node.js",
         "Express", "Spring Boot", "REST + OpenAPI", "BFF pattern",
     ]),
-    ("03", "Intelligence", "#818CF8", [
+    ("03", "Intelligence", "#818CF8", "models + evaluation", [
         "PyTorch", "scikit-learn", "XGBoost", "SHAP", "Transformers",
         "FAISS", "BM25", "YOLOv8", "ByteTrack", "CLIP", "OpenCV",
         "Thompson sampling", "ADWIN", "off-policy evaluation",
     ]),
-    ("04", "Data", "#A78BFA", [
+    ("04", "Data", "#A78BFA", "storage + modelling", [
         "PostgreSQL", "SQLite · WAL", "Redis", "MySQL", "DuckDB", "dbt",
         "Airflow", "Drizzle ORM", "Flyway", "pandas", "NumPy",
         "Cohen · Fleiss · Krippendorff",
     ]),
-    ("05", "Platform", "#2DD4BF", [
+    ("05", "Platform", "#2DD4BF", "ship, observe, recover", [
         "Docker Compose", "GitHub Actions", "Prometheus", "Grafana",
         "nginx", "Caddy", "AWS", "GCP", "Cloudflare", "Vercel",
     ]),
@@ -117,7 +117,7 @@ def build(theme_name, langs):
     y += 20
 
     body = []
-    for num, name, accent, labels in LAYERS:
+    for num, name, accent, desc, labels in LAYERS:
         rows = flow(labels, CHIP_X0, W - MARGIN)
         block_h = len(rows) * (CHIP_H + ROW_GAP) - ROW_GAP
         y += 34
@@ -133,6 +133,12 @@ def build(theme_name, langs):
             f'<text x="{MARGIN}" y="{mid + 9}" '
             f'font-family="Inter,\'Segoe UI\',-apple-system,Helvetica,Arial,sans-serif" '
             f'font-size="14.5" font-weight="600" fill="{t["head"]}">{esc(name)}</text>'
+        )
+        body.append(
+            f'<text x="{MARGIN}" y="{mid + 26}" '
+            f'font-family="\'JetBrains Mono\',\'SF Mono\',Menlo,Consolas,monospace" '
+            f'font-size="9" letter-spacing="1.1" fill="{t["muted"]}" '
+            f'fill-opacity="0.85">{esc(desc)}</text>'
         )
 
         for r_i, row in enumerate(rows):

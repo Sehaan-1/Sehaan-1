@@ -14,14 +14,14 @@ CS @ VIT Bhopal — applied AI, ML engineering, and data science.
 <picture>
   <source
     media="(prefers-color-scheme: dark)"
-    srcset="https://raw.githubusercontent.com/Sehaan-1/Sehaan-1/output/github-snake-dark.svg?v=2"
+    srcset="https://raw.githubusercontent.com/Sehaan-1/Sehaan-1/output/github-snake-dark.svg?v=3"
   />
   <source
     media="(prefers-color-scheme: light)"
-    srcset="https://raw.githubusercontent.com/Sehaan-1/Sehaan-1/output/github-snake.svg?v=2"
+    srcset="https://raw.githubusercontent.com/Sehaan-1/Sehaan-1/output/github-snake.svg?v=3"
   />
   <img
     alt="GitHub contribution snake animation"
-    src="https://raw.githubusercontent.com/Sehaan-1/Sehaan-1/output/github-snake.svg?v=2"
+    src="https://raw.githubusercontent.com/Sehaan-1/Sehaan-1/output/github-snake.svg?v=3"
   />
 </picture>

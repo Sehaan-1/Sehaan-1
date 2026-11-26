@@ -28,7 +28,7 @@ jobs:
       - name: Speed up snake animation and trim empty leading columns
         run: |
           sudo sed -i -E 's/[0-9]+ms/26000ms/g' dist/*.svg
-          python3 - <<'EOF'
+          sudo python3 - <<'EOF'
           import glob, re
           for path in glob.glob('dist/*.svg'):
               svg = open(path, 'r', encoding='utf-8').read()

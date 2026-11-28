@@ -1,4 +1,4 @@
-CS @ VIT Bhopal — applied AI, ML engineering, and data science.
+CS @ VIT  — applied AI, ML engineering, and data science.
 
 - Currently building evaluation-first AI systems: RAG with hybrid retrieval, real-time computer vision, and data products that ship with baselines, metrics, and ablations.
 - Interested in applied ML engineering, reliability-minded systems, and turning research into tools people actually use.
